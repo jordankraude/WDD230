@@ -1,0 +1,28 @@
+body {}
+header {display: flex;
+        align-content: center;
+        align-items: center;
+        background-color: lightblue;
+        border-radius: 3em;
+        text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+main {display:block;
+      align-content: center;}
+main h2 {text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px}
+footer {background-color: lightblue;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 3em;
+        font-weight: bold;}
+img {border-image-width: 5em;
+     border-color: white;
+     max-width: 10em;
+     max-height: 10em;
+     padding-right: 5em;
+     padding-left: 5em;
+     padding-top: 1em;
+     padding-bottom: 1em;
+    }
