@@ -2,11 +2,11 @@ let currentdate = document.lastModified;
 let date = new Date();
 let year = date.getFullYear();
 
-var before = document.getElementById('javadate').textContent
-var before1 = document.getElementById('year').textContent
+let before = document.querySelector('#year').textContent
+let before1 = document.getElementById('javadate').textContent
 
-document.getElementById("year").textContent = before1 + year + ' .:|:. Jordan Kraude .:|:. Idaho'
-document.getElementById('javadate').textContent = before + currentdate;
+document.querySelector("#year").textContent = before + year + ' .:|:. Jordan Kraude .:|:. Idaho'
+document.getElementById('javadate').textContent = before1 + currentdate;
 
 let display = document.getElementById("year").textContent
 
