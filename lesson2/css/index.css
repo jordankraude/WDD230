@@ -42,19 +42,17 @@ img {width: 50%;}
 main{width: 100vw;}
 
 
-@media screen and (min-width: 640px) {
+@media (min-width: 640px) {
         .viewPortGrid1{display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;}
 
-        main div {width: 45vw;
+        main div {width: 42.5vw;
                 height: 90%;
         margin-left: 2.5vw;}
 
         img {width: 30%;
         float: left;}
-
-        
 
         #div3 {grid-row:2;
                 grid-column: 1/3;
@@ -65,7 +63,35 @@ main{width: 100vw;}
         #div3 p {font-size: 2em;}
       }
 
-      @media screen and (min-width: 650px) {
+      @media (min-width: 1024px) {
         .viewPortGrid1{display: grid;
-                grid-template-columns: 1fr 1fr 1fr;}
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                margin-bottom: 2em;}
+        main div {margin-bottom: 1em;
+                float: none;
+                margin-bottom: 4em;
+                margin-top: -0em;
+                padding-top: 0em;
+                width: 30vw;
+                border-radius: 4em;
+        height: 100%;}
+        #div3 {margin-bottom: 4em;
+                margin-top: -0em;
+                padding-top: 0em;
+                width: 30vw;
+                border-radius: 4em;
+                grid-column: 3/4;
+                grid-row: 1;
+                float:left;}
+        #div3 p {padding: 1em;
+                font-size: 1.5em;}
+        #div3 img {width: 60%;
+        float: none;}
+
+        p {padding: 1em;}
+
+        img {width: 60%;
+        float: none;}
+
       }
