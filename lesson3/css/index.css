@@ -2,7 +2,7 @@
 
 h1, h2, h3, nav {font-family: 'Lato', sans-serif;
 text-decoration: underline;}
-p, ul li {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;}
+p, .otherlist {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;}
 
 li a{text-align: center;
     padding: 20px;
@@ -19,7 +19,7 @@ li a:hover {
 
 h1 {text-align: center;}
 
-nav {list-style-type: none;
+ul {list-style-type: none;
     margin: 0;
     padding: 1em;
     overflow: hidden;
@@ -68,7 +68,7 @@ width: 90%;}
 
 @media (max-width: 640px) {
 
-    nav {list-style-type: none;
+    ul {list-style-type: none;
         margin: 0;
         display: block;
         background-color: white;}
