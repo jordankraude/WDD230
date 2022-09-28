@@ -19,13 +19,14 @@ li a:hover {
 
 h1 {text-align: center;}
 
-ul {list-style-type: none;
+#nav {list-style-type: none;
     margin: 0;
     padding: 1em;
     overflow: hidden;
     display: flex;
     justify-content: center;
     background-color: white;}
+
 
 body {background-color: lightslategray;}
 
