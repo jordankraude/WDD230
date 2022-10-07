@@ -19,7 +19,7 @@ document.querySelector('#date').textContent = full_date;
 let before = document.querySelector('#year').textContent;
 let before1 = document.querySelector('#javadate').textContent;
 
-document.querySelector("#year").textContent = before + year + ' .:|:. Jordan Kraude .:|:. Idaho';
+document.querySelector("#year").textContent = before + year + ' .:|:. Jordan Kraude .:|:. WDD 230 Project';
 document.querySelector('#javadate').textContent = before1 + currentdate;
 
 
