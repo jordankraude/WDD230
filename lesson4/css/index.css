@@ -31,8 +31,10 @@ margin: 5px auto;}
 header h1 {grid-column: 2/3;
 text-align: center;
 margin: auto auto;
-font-size: x-large;}
-#logo {grid-column: 1/2;
+font-size: x-large;
+
+}
+.logo {grid-column: 1/2;
 width: 20vw;
 margin: auto auto;}
 
@@ -54,7 +56,7 @@ background-color: white;
 width: 16.5vw;}
 
 
-#logo {width: 25vw;
+.logo {width: 25vw;
        height: 20vh;}
 
 footer {text-align: center;
@@ -98,6 +100,7 @@ margin: 5px 5px;
 margin-top: 12px;}
 #spotlightsection3 {display: none;}
 
+#date {font-size: 22px}
 
 @media (min-width: 640px) {
   main {display: grid;
@@ -119,7 +122,7 @@ margin-top: 12px;}
   width: 25vw;}
   header h1 {grid-column: 2/4;
   text-align: center;}
-  #logo {grid-column: 1/2;
+  .logo {grid-column: 1/2;
         margin: auto auto;;
         width: 20vw;
         max-width: 20vw;}
@@ -214,7 +217,7 @@ margin: auto 0;
 width: 30vw;}
 header h2 {font-size: 1.5em;}
 
-#logo {width: 10vw;
+.logo {width: 10vw;
 margin: auto 0;}
 .btn {display: none;}
 .nav {display: flex;
