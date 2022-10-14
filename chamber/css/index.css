@@ -205,11 +205,13 @@ margin-top: 12px;}
     color: black;
     text-align: center;}
   
-  main {height: 300vh}
+  main {height: auto}
   
+  #spotlights {height: 460px;}
     .spotlightsection {background-color: white;
       margin: 5px 5px;
-      width: 50vw;}
+      width: 50vw;
+      height: 430px;}
   #spotlightsection3 {display: none;}
 
   #socialtop img {width: 80%;
