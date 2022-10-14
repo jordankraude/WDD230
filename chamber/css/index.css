@@ -1,11 +1,24 @@
 h1, h2, h3, h4, nav {font-family: 'Lato', sans-serif;}
 
+hr {margin: 5px 15px;}
+
+p {color: darkslategray;}
+
 header div {display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 25vh;
 
   justify-content: space-around;
 }
+
+#banner {display: block;
+         height: 40px;
+         padding: 5px;
+         font-size: large;
+         color: darkslategray;
+         background-color: white;
+         margin: 5px 10px;
+         text-align: center;}
 
 header {border: 5px solid black;
   background-color: darkgray;}
@@ -32,8 +45,10 @@ header h1 {grid-column: 2/3;
 text-align: center;
 margin: auto auto;
 font-size: x-large;
-
+color: white;
+font-weight:bolder;
 }
+
 .logo {grid-column: 1/2;
 width: 20vw;
 margin: auto auto;}
@@ -50,6 +65,7 @@ margin: auto auto;}
 .nav li {text-align: center;
 font-size: large;}
 li a {color: black;}
+li a:hover {color: skyblue;}
 
 .newstyle{display: block;
 background-color: white;
@@ -76,25 +92,57 @@ main div {
   color: black;
   text-align: center;
   margin: 5px 5px;
-  height: 30vh;
+  height: 40vh;
   border: 3px solid black;
 }
 
 #hero {grid-column: 1;
-      grid-row: 1;}
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;}
+#hero h1 {grid-column: 1/3;
+          grid-row: 1/2;}
+#hero button {grid-column: 3/4;
+              grid-row: 3/4;
+              margin: 10px 10px;}
+#heroimg {grid-column:1/4;
+  grid-row: 1/4;
+  width: 100%;
+  height: 100%;}
 
 #callToAction {display: none;}
 #news {grid-column: 1;
 grid-row: 4;}
+#news h1 {color: darkslategrey;
+  font-size: 2em;}
+#news p {font-size: 1em;
+margin: 0 20px;}
+
 #events {grid-column: 1;
   grid-row: 2;}
+#events h1 {color: darkslategray;
+            font-size: 25px;}
+#events h2 {font-size: 20px;}
+#events p {font-size: 16px;}
+#events div {
+  border: 3px solid white;
+  height: auto}
+
 #weather {grid-column: 1;
   grid-row: 3;}
+#weather h1 {color: darkslategray;}
 #join {display: none;}
+#join button {margin-top: 20%;
+              width: 50%;
+              height: 20%;}
+#join p {font-size: 1.5em;
+         margin-top: 20%;
+         color: darkslategray;}
 #spotlights {grid-column: 1;
   grid-row: 5/6;
   display: block;
-  height: 66vh;}
+  height: 88vh;}
 .spotlightsection {background-color: white;
 margin: 5px 5px;
 margin-top: 12px;}
@@ -102,7 +150,15 @@ margin-top: 12px;}
 
 #date {font-size: 22px}
 
+
+
 @media (min-width: 640px) {
+#events h1 {color: darkslategray; margin-top: 30px;}
+#events p {font-size: 20px;}
+#events p a {color: darkslategray;}
+#events div {margin: 20px 10px;
+  margin-top: 50px;
+  border: 3px solid white;}
   main {display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr}
@@ -172,6 +228,17 @@ margin-top: 12px;}
     justify-content: flex-end;
     flex-direction: row-reverse;}
 
+    #join button {margin-top: 5%;
+      width: 50%;
+      height: 20%;}
+    #join p {font-size: 1.5em;
+    margin-top: 10%;}
+
+    #news h1 {color: darkslategrey;
+      font-size: 3em;}
+    #news p {font-size: 1.5em;
+    margin: 0 20px;}
+
 }
 
 @media (min-width: 1024px) {
@@ -179,6 +246,15 @@ margin-top: 12px;}
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
       height: 200vh;}
+  
+  #banner {display: block;
+    height: 30px;
+    padding: 5px;
+    font-size: large;
+    color: darkslategray;
+    background-color: white;
+    margin: 5px 10px;
+    text-align: center;}
 
   #hero {grid-row: 1/3;
   grid-column: 2/4;}
@@ -190,6 +266,11 @@ margin-top: 12px;}
   grid-column: 1/2;}
   #join {grid-row: 3/4;
   grid-column: 1/2;}
+  #join button {margin-top: 20%;
+    width: 50%;
+    height: 20%;}
+#join p {font-size: 1.5em;
+margin-top: 20%;}
   #spotlights {grid-row: 1/4;
   grid-column: 4/5;
   display: block;
@@ -234,5 +315,16 @@ background-color: darkslategray;}
 li a {color: white;
 font-size: xx-large;}
 
+
 }
 
+@media (max-width:640px){
+  .spotlightsection {background-color: white;
+    margin: 5px 5px;
+    margin-top: 12px;}
+  .spotlightsection h1{font-size: 20px;}
+  .spotlightsection h3{font-size: 16px;}
+  .spotlightsection img{width: 25%;
+    height: 25%};
+
+}
