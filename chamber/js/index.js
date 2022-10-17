@@ -35,3 +35,6 @@ console.log(dayOfWeek)
 if (dayOfWeek != 1 || dayOfWeek != 2){
     banner.style.display = "none";
 }
+if (dayOfWeek == 1 || dayOfWeek == 2){
+    banner.style.display = "block"
+}
