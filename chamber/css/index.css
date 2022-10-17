@@ -1,12 +1,15 @@
 h1, h2, h3, h4, nav {font-family: 'Lato', sans-serif;}
 
+header section {display: flex;}
+
 hr {margin: 5px 15px;}
 
 p {color: darkslategray;}
+header{height: auto;}
 
 header div {display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 25vh;
+  height: auto;
 
   justify-content: space-around;
 }
@@ -29,17 +32,17 @@ text-align: center;
 font-size: medium;
 margin-bottom: 5px;
 background-color: darkslategray;
-height: 10vh;
+height: 50px;
 display: flex;
-justify-content: space-between;}
+justify-content: space-between;
+margin-top: 10px;}
 
 #socialtop img {width: 80%;
 height: 80%;
-margin: 0 0;
-margin-top: 8px;}
+margin: 5px auto;}
 
 .btn {grid-column: 3/4;
-width: 25vw;
+width: 80px;
 margin: 5px auto;}
 header h1 {grid-column: 2/3;
 text-align: center;
@@ -72,8 +75,8 @@ background-color: white;
 width: 16.5vw;}
 
 
-.logo {width: 25vw;
-       height: 20vh;}
+.logo {width: 80px;
+       height: 80px;}
 
 footer {text-align: center;
 background-color: darkgray;
@@ -92,7 +95,7 @@ main div {
   color: black;
   text-align: center;
   margin: 5px 5px;
-  height: 40vh;
+  height: auto;
   border: 3px solid black;
 }
 
@@ -115,16 +118,20 @@ main div {
 #news {grid-column: 1;
 grid-row: 4;}
 #news h1 {color: darkslategrey;
-  font-size: 2em;}
+  font-size: 2em;
+  margin-top: 60px;}
 #news p {font-size: 1em;
 margin: 0 20px;}
 
 #events {grid-column: 1;
   grid-row: 2;}
 #events h1 {color: darkslategray;
-            font-size: 25px;}
-#events h2 {font-size: 20px;}
-#events p {font-size: 16px;}
+            font-size: 25px;
+            margin-top: 60px;}
+#events h2 {font-size: 20px;
+            padding:20px;}
+#events p {font-size: 16px;
+            padding-top: 20px;}
 #events div {
   border: 3px solid white;
   height: auto}
@@ -141,8 +148,10 @@ margin: 0 20px;}
          color: darkslategray;}
 #spotlights {grid-column: 1;
   grid-row: 5/6;
-  display: block;
-  height: 88vh;}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: auto;}
 .spotlightsection {background-color: white;
 margin: 5px 5px;
 margin-top: 12px;}
@@ -162,9 +171,11 @@ margin-top: 12px;}
   main {display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr}
-  header div {display: grid;
+  header div {grid-row: 1/2;
+          grid-column: 1/3;
+          display: grid;
           grid-template-columns: 1fr 1fr 1fr 1fr;
-          height: 25vh;
+          height: 80px;
           background-color: darkgray;
           margin: 10px 0px;
           margin-top: 0%;}
@@ -172,16 +183,25 @@ margin-top: 12px;}
     grid-column: 2/4;
   text-align: center;
   margin-bottom: 5px;}
+
+  header{display: grid;
+  grid-template-rows: 2fr 1fr;
+grid-template-columns: 1fr;}
   
   .btn {grid-column: 4/5;
-  margin: 5px 5px;
-  width: 25vw;}
+  margin: auto auto;
+  width: 150px;
+height: 130px;
+margin-top: 10px;
+margin-right: 20px;
+}
   header h1 {grid-column: 2/4;
-  text-align: center;}
+  text-align: center;
+  font-size: 2em;}
   .logo {grid-column: 1/2;
         margin: auto auto;;
-        width: 20vw;
-        max-width: 20vw;}
+        width: 120px;
+        height: 120px;}
   
   #hero {grid-row: 1/2;
   grid-column: 1/5;}
@@ -207,7 +227,8 @@ margin-top: 12px;}
   
   main {height: auto}
   
-  #spotlights {height: 460px;}
+  #spotlights {height: 460px;
+              flex-direction: row;}
     .spotlightsection {background-color: white;
       margin: 5px 5px;
       width: 50vw;
@@ -220,12 +241,13 @@ margin-top: 12px;}
     margin-top: 8px;}
 
     header #socialtop {grid-row: 2;
-      grid-column: 2/3;
+      grid-column: 1/3;
+      margin-top: 10px;
     text-align: center;
     font-size: medium;
     margin-bottom: 5px;
     background-color: darkslategray;
-    height: 10vh;
+    height: 60px;
     display:flex;
     justify-content: flex-end;
     flex-direction: row-reverse;}
@@ -233,21 +255,21 @@ margin-top: 12px;}
     #join button {margin-top: 5%;
       width: 50%;
       height: 20%;}
-    #join p {font-size: 1.5em;
+    #join p {font-size: 3em;
     margin-top: 10%;}
-
     #news h1 {color: darkslategrey;
-      font-size: 3em;}
+      font-size: 4em;}
     #news p {font-size: 1.5em;
     margin: 0 20px;}
 
 }
 
 @media (min-width: 1024px) {
+  header #socialtop {margin-top: 0px;}
   main {display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-      height: 200vh;}
+      height: auto;}
   
   #banner {display: block;
     height: 30px;
@@ -275,24 +297,31 @@ margin-top: 12px;}
 margin-top: 20%;}
   #spotlights {grid-row: 1/4;
   grid-column: 4/5;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: auto;
   width: auto;}
   #spotlightsection3 {display: block;
     background-color: white;
     margin: 10px 10px;
-  height: 32%;
+  height: auto;
   width: 25vw;}
+  #spotlightsection3 h1 {font-size: 40px;}
+  #spotlightsection3 p {font-size: 15px;}
   .spotlightsection {background-color: white;
     margin: 10px 10px;
   width: 25vw;
-  height: 32%;}
+  height: auto;}
+  .spotlightsection h1 {font-size: 40px;}
+  .spotlightsection p {font-size: 15px;}
 
 
 
 
-header div {display:flex;
-  justify-content: flex-start;
+header div {display:grid;
+  grid-template-columns: 1fr 4fr 1fr 5fr 1fr;
+  height: 100px;
 }
 
 header h1 {font-size: 2em;
@@ -300,15 +329,24 @@ margin: auto 0;
 width: 30vw;}
 header h2 {font-size: 1.5em;}
 
-.logo {width: 10vw;
-margin: auto 0;}
+.logo {width: 80%;
+  height: 80%;
+margin: auto auto;
+grid-column: 1;
+grid-row: 1;}
+header h1 {grid-column: 2/3;
+grid-row: 1;}
 .btn {display: none;}
-.nav {display: flex;
+.nav {grid-column:3/6;
+  grid-row: 1;
+  display: flex;
   justify-content: space-around;
-margin: 0 0;
-top: 50px;
-right: 40px;
-width: 50vw;}
+  position: relative;
+  top:auto;
+  right: auto;
+  margin-right: 10px;
+  margin-top: 10px;
+}
 .nav li {font-size: x-large;}
 #date {display: block;
 width: 100%;
@@ -317,6 +355,8 @@ background-color: darkslategray;}
 li a {color: white;
 font-size: xx-large;}
 
+footer {height: auto;}
+footer img {margin-top: 10px;}
 
 }
 
