@@ -14,6 +14,9 @@ header div {display: grid;
   justify-content: space-around;
 }
 
+picture{grid-row: 1/4;
+grid-column: 1/4;}
+
 #banner {display: block;
          height: 40px;
          padding: 5px;
@@ -109,7 +112,7 @@ main div {
 #hero button {grid-column: 3/4;
               grid-row: 3/4;
               margin: 10px 10px;}
-#heroimg {grid-column:1/4;
+.heroimg {grid-column:1/4;
   grid-row: 1/4;
   width: 100%;
   height: 100%;}

@@ -27,17 +27,21 @@
         </div>
         <div id="socialtop">
             <h2 id="date">Date</h2>
+            <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
             <section>
                 <a href="https://www.facebook.com/" target="_blank"><img src="..\chamber\images\facebook.png" alt="facebook icon"></a>
                 <a href="https://www.twitter.com/" target="_blank"><img src="..\chamber\images\twitter.png" alt="twitter icon"></a>
             </section>
-            <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
         </div>
         
     </header>
     <main>
         <div id="hero">
-            <img id="heroimg" src="https://www.turing.ac.uk/sites/default/files/2019-12/iceberg_tracking.jpg" alt="iceberg">
+            <picture>
+                <source class="heroimg" media="(min-width:1024px)" srcset="..\chamber\images\iceberg_hero.jpg">
+                <source class="heroimg" media="(min-width:640px)" srcset="..\chamber\images\Iceberg_medium.jpg">
+                <img class="heroimg" src="..\chamber\images\iceberg_small.jpg" alt="iceberg">
+            </picture>
             <h1>Welcome to Antartica</h1>
             <button><b>Join the Chamber</b></button>
         </div>
