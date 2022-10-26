@@ -1,7 +1,7 @@
 let images = document.querySelectorAll('img');
 let pimages = document.querySelectorAll('[data-src]');
 const options = {
-    threshold: 1,
+    threshold: .5,
     rootMargin: "0px 0px 100px 0px"
 }
 
