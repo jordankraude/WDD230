@@ -24,7 +24,8 @@ grid-column: 1/4;}
          color: darkslategray;
          background-color: white;
          margin: 5px 10px;
-         text-align: center;}
+         text-align: center;
+         font-size: medium;}
 
 header {border: 5px solid black;
   background-color: darkgray;}
@@ -35,14 +36,14 @@ text-align: center;
 font-size: medium;
 margin-bottom: 5px;
 background-color: darkslategray;
-height: 50px;
+height: 60px;
 display: flex;
 justify-content: space-between;
 margin-top: 10px;}
 
-#socialtop img {width: 80%;
-height: 80%;
-margin: 5px auto;}
+#socialtop img {width: 90%;
+height: 70%;
+margin: 10px auto;}
 
 .btn {grid-column: 3/4;
 width: 80px;
@@ -160,7 +161,7 @@ margin: 5px 5px;
 margin-top: 12px;}
 #spotlightsection3 {display: none;}
 
-#date {font-size: 22px}
+#date {font-size: 13px}
 
 
 
@@ -240,7 +241,7 @@ margin-right: 20px;
 
   #socialtop img {width: 80%;
     height: 80%;
-    margin: 0 0;
+    margin: 0 auto;
     margin-top: 8px;}
 
     header #socialtop {grid-row: 2;
@@ -353,7 +354,8 @@ grid-row: 1;}
 .nav li {font-size: x-large;}
 #date {display: block;
 width: 100%;
-background-color: darkslategray;}
+background-color: darkslategray;
+font-size: 22px;}
 
 li a {color: white;
 font-size: xx-large;}
@@ -361,6 +363,11 @@ font-size: xx-large;}
 footer {height: auto;}
 footer img {margin-top: 10px;}
 
+#photogrid {display: grid;
+grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+height: 1000px;
+grid-column: 1/4;
+grid-row: 1/4;}
 }
 
 @media (max-width:640px){
