@@ -32,6 +32,6 @@ const io = new IntersectionObserver (
     
 )
 
-pimages.forEach(image => {
+images.forEach(image => {
     io.observe(image)
 })
