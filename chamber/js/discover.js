@@ -1,7 +1,18 @@
 let datenow = Date.now();
-let previousdate = localStorage.getItem('lastvisit');
-let difference = datenow - previousdate;
-let diffdays = Math.floor(difference/1000/60/60/24);
+var c = new Date ("2022-10-27")
+
+if (!localStorage.getItem('lastvisit')){
+    localStorage.setItem('lastvisit', Date.now())
+    document.getElementById('LastVisited').textContent = "This is your first visit!"
+
+}
+else {
+    let previousdate = localStorage.getItem('lastvisit');
+    let difference = datenow - previousdate;
+    let diffdays = Math.floor(difference/1000/60/60/24);
+    document.getElementById("LastVisited").textContent = 'Last Visited "' + diffdays +'" Days Ago'
+    localStorage.setItem('lastvisit', datenow)
+}
 
 
 
@@ -11,9 +22,6 @@ let button = document.querySelector('.btn');
 let images = document.querySelectorAll('img');
 let pimages = document.querySelectorAll('[data-src]');
 
-console.log(diffdays)
-
-document.getElementById('LastVisited').textcontent = diffdays.toLocaleString;
 
 const options = {
     threshold: .5,

@@ -198,6 +198,9 @@ margin-top: 12px;}
     }
     
   #photogrid picture img:hover {box-shadow: 0 0 50px #333;}
+
+  #LastVisited {font-size: large;
+  margin: auto auto;}
     
 
 
@@ -338,6 +341,10 @@ margin-right: 20px;
         }
         
       #photogrid picture img:hover {box-shadow: 0 0 50px #333;}
+
+      #LastVisited {font-size:xx-large;
+        margin: auto auto;
+      text-align: center;}
 
 }
 
