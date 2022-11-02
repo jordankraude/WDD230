@@ -1,0 +1,29 @@
+tr:nth-child(odd) {
+    background-color:aqua
+}
+tr:nth-child(even) {
+    background-color:lightgray
+}
+thead tr th, tfoot th {font-size: larger;
+background-color: darkcyan;}
+
+tfoot {font-size: x-small;}
+
+#BlackF {font-style: italic;}
+#BlackF2 {text-align: center;
+background-color: aquamarine;}
+.headers {background-color: aquamarine;}
+
+tr {text-align: center;
+    font-family: Ubunto, sans-serif}
+
+table {width: 60%;
+    height: 100%;
+margin: auto auto;}
+
+
+@media (max-width: 640px){
+    table {
+        width: 100%;
+    }
+}
