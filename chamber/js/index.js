@@ -38,3 +38,29 @@ if (dayOfWeek != 1 || dayOfWeek != 2){
 if (dayOfWeek == 1 || dayOfWeek == 2){
     banner.style.display = "block"
 }
+
+const weatherhour = date_now.getHours() - 1;
+const weatherminutes = date_now.getMinutes();
+const URLweather = "https://api.open-meteo.com/v1/forecast?latitude=82.86&longitude=135.00&hourly=temperature_2m,relativehumidity_2m,windspeed_10m"
+getWeather(URLweather)
+async function getWeather(requestURL) {
+    const response = await fetch(requestURL)
+    if (response.ok){
+        const jsObject = await response.json();
+        const temptime = jsObject['hourly']
+        const Temperature = temptime.temperature_2m[weatherhour]
+        const TemperatureF = Math.round((Temperature * 9/5) + 32)
+        const Windspeed = temptime.windspeed_10m[weatherhour]
+        const minute_hour = (weatherhour * 60) + weatherminutes
+        console.log(Temperature)
+        document.getElementById('weatherdegree').textContent = TemperatureF + ' F°'
+        document.getElementById('windspeed').textContent = Windspeed + ' km/h'
+        let chill = Math.round((35.74 + (0.6215 * TemperatureF))-(35.75 * Math.pow(Windspeed,0.16)) + (0.4275*TemperatureF*Math.pow(Windspeed,0.16)));
+
+        if (Windspeed > 3.0 & Temperature <= 50){
+            document.getElementById('windchill').textContent = chill + " °F"
+        }
+        else
+        {document.getElementById('windchill').textContent = 'N/A'}
+    }
+}
