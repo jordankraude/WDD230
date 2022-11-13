@@ -60,6 +60,9 @@ function switchDisplay(){
         dirCards.style.display = 'none'
         dirTable.style.display = 'block'
     }
+    else{
+        return
+    }
 
 }
 
