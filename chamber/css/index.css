@@ -260,7 +260,7 @@ margin-top: 40vh;}
 height: auto;}
 #chooseSection {display: flex;
 justify-content: space-around;}
-#dirTable {display: none;}
+#dirTable {display: block;}
 #dirCards {display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -278,6 +278,15 @@ justify-content: space-around;}
 #dirCards section img {width: 70%;
 height: 40%;}
 #dirCards p {color: white;}
+#dirTable td {display: block;
+text-align: center;}
+#dirTable tr {padding: 30px;
+height: 80px;
+}
+tr:nth-child(odd) {
+  background-color:darkslategray;
+}
+#dirTable table {height: auto;}
 
 
 
@@ -422,6 +431,8 @@ margin-right: 20px;
       #LastVisited {font-size:xx-large;
         margin: auto auto;
       text-align: center;}
+      #dirTable td {display: table-cell;
+      width: 18%;}
 }
 
 @media (min-width: 1024px) {

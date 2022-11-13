@@ -32,11 +32,17 @@
 
     <main id="directory">
         <div id="chooseSection">
-            <button id="TV">Table View</button>
-            <button id="CV">Card View</button>
+            <input type="radio" id="TV" name="displayView" value="Table">
+            <label for="TV">HTML</label><br>
+            <input type="radio" id="CV" name="displayView" value="Card">
+            <label for="css">CSS</label><br>
+            <!-- <button id="TV">Table View</button>
+            <button id="CV">Card View</button> -->
         </div>
         <div id="dirCards"></div>
-        <div id="dirTable"></div>
+        <div id="dirTable">
+            <table id="dirTableActual"></table>
+        </div>
     </main>
 
     <footer>

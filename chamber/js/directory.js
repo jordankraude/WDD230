@@ -17,6 +17,7 @@ async function setDisplay(requestURL) {
         const buisnesses = jsObject['buisnesses']
         for (buisness in buisnesses){
             displayBuisness(buisnesses[buisness])
+            displayBuisnessTable(buisnesses[buisness])
         }
     }
 }
@@ -48,23 +49,47 @@ function displayBuisness(item){
     document.getElementById('dirCards').appendChild(card)
 }
 
+function displayBuisnessTable(item){
+    let tablerow = document.createElement('tr')
+    let companyname = document.createElement('td')
+    let address = document.createElement('td');
+    let phoneNumber = document.createElement('td');
+    let linkholder = document.createElement('td')
+    let websitelink  = document.createElement('a')
+
+    companyname.textContent = item.name
+    address.textContent = item.address;
+    phoneNumber.textContent = item.phoneNumber;
+    websitelink.textContent = item.website;
+    websitelink.setAttribute('href', item.website)
+    websitelink.setAttribute('target', '_blank')
+
+    tablerow.appendChild(companyname)
+    tablerow.appendChild(address)
+    tablerow.appendChild(phoneNumber)
+    linkholder.appendChild(websitelink)
+    tablerow.appendChild(linkholder)
+    document.getElementById('dirTableActual').appendChild(tablerow)
+}
+
 function switchDisplay(){
     let dirCards = document.getElementById('dirCards')
     let dirTable = document.getElementById('dirTable')
 
-    if (dirCards.style.display == 'none' && dirTable.style.display == 'block'){
-        dirCards.style.display = 'flex'
-        dirTable.style.display = 'none'
-    }
-    else if (dirCards.style.display == 'flex' && dirTable.style.display == 'none'){
-        dirCards.style.display = 'none'
-        dirTable.style.display = 'block'
-    }
-    else{
-        return
-    }
+    dirCards.style.display = 'flex'
+    dirTable.style.display = 'none'
 
 }
 
+function switchDisplay(){
+    let dirCards = document.getElementById('dirCards')
+    let dirTable = document.getElementById('dirTable')
+
+    dirCards.style.display = 'none'
+    dirTable.style.display = 'block'
+
+}
+
+
 cardbutton.addEventListener('click', switchDisplay)
-tablebutton.addEventListener('click', switchDisplay)
+tablebutton.addEventListener('click', switchDisplay1)
