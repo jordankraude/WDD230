@@ -2,6 +2,14 @@ var requestURL = "https://raw.githubusercontent.com/jordankraude/wdd230/main/cha
 let tablebutton = document.getElementById('TV')
 let cardbutton = document.getElementById('CV')
 
+let navlist = document.querySelector('.nav');
+let button = document.querySelector('.btn');
+button.addEventListener('click', show)
+
+function show() {
+    navlist.classList.toggle('newstyle');
+}
+
 async function setDisplay(requestURL) {
     const response = await fetch(requestURL)
     if (response.ok){
@@ -17,7 +25,7 @@ setDisplay(requestURL)
 function displayBuisness(item){
     let card = document.createElement('section');
     let logo = document.createElement('img')
-    let address = document.createElement('h2');
+    let address = document.createElement('p');
     let phoneNumber = document.createElement('p');
     let linkholder = document.createElement('p')
     let websitelink  = document.createElement('a')
