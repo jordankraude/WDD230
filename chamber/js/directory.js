@@ -37,6 +37,7 @@ function displayBuisness(item){
     phoneNumber.textContent = item.phoneNumber;
     websitelink.textContent = item.website;
     websitelink.setAttribute('href', item.website)
+    websitelink.setAttribute('target', '_blank')
     
 
     card.appendChild(logo)
