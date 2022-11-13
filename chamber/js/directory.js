@@ -81,7 +81,7 @@ function switchDisplay(){
 
 }
 
-function switchDisplay(){
+function switchDisplay1(){
     let dirCards = document.getElementById('dirCards')
     let dirTable = document.getElementById('dirTable')
 

@@ -258,9 +258,16 @@ margin-top: 40vh;}
 
 #directory {display: block;
 height: auto;}
+#directory h1 {text-align: center;
+margin-top: 40px;}
 #chooseSection {display: flex;
 justify-content: space-around;}
-#dirTable {display: block;}
+#chooseSection button {width: 20%;
+height: 50px;
+margin: 20px 20px;
+font-size: large;}
+#dirTable {display: none;
+padding: 20px;}
 #dirCards {display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -284,7 +291,8 @@ text-align: center;}
 height: 80px;
 }
 tr:nth-child(odd) {
-  background-color:darkslategray;
+  background-color: lightslategray;
+  color: white
 }
 #dirTable table {height: auto;}
 
