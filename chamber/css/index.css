@@ -396,6 +396,24 @@ margin-right: 20px;
       #LastVisited {font-size:xx-large;
         margin: auto auto;
       text-align: center;}
+
+      #directory {display: block;}
+      #chooseSection {display: flex;
+      justify-content: space-around;}
+      #dirTable {display: none;}
+      #dirCards {display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;}
+      #dirCards section {
+        border: 1px solid darkslategray;
+        background-color: lightslategray;
+        padding: 30px;
+        text-align: center;
+        width: 300px;
+        margin: 20px;
+        box-shadow: 5px 10px 8px 5px #888888;
+    }
       
 
 }
