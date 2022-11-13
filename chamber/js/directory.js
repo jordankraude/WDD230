@@ -1,4 +1,4 @@
-var requestURL = "../chamber/file.json"
+var requestURL = "https://raw.githubusercontent.com/jordankraude/wdd230/main/chamber/file.json"
 let tablebutton = document.getElementById('TV')
 let cardbutton = document.getElementById('CV')
 
