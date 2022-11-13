@@ -52,13 +52,13 @@ function switchDisplay(){
     let dirCards = document.getElementById('dirCards')
     let dirTable = document.getElementById('dirTable')
 
-    if (dirCards.style.display == 'none' && dirTable.style.display != 'grid'){
-        dirCards.style.display = 'grid'
+    if (dirCards.style.display == 'none' && dirTable.style.display != 'block'){
+        dirCards.style.display = 'flex'
         dirTable.style.display = 'none'
     }
-    else if (dirCards.style.display == 'grid' && dirTable.style.display != 'none'){
+    else if (dirCards.style.display == 'flex' && dirTable.style.display != 'none'){
         dirCards.style.display = 'none'
-        dirTable.style.display = 'grid'
+        dirTable.style.display = 'block'
     }
 
 }
