@@ -413,7 +413,8 @@ margin-right: 20px;
         width: 300px;
         margin: 20px;
         box-shadow: 5px 10px 8px 5px #888888;
-    }
+      }
+      #dirCards section img {width: 70%;}
       
 
 }
