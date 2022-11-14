@@ -61,5 +61,27 @@
     "phoneNumber": "+1 888 800-4100",
     "website":"https://www.gadventures.com/",
     "imageurl": "https://global-uploads.webflow.com/5d98599ba491dd290226f10f/60e4a6eca808123585000b8e_g-adventures-logo-vector.png"
+    },
+    {
+        "name": "Lineage Logistics",
+        "address": "Novi, Michigan",
+        "phoneNumber": "800-678-7271",
+        "website":"https://lineagelogistics.com/",
+        "imageurl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiZSgIOX6zeSXCL_T4qnf_tdNTW3h3VfPQtjvj6iLMOQ&s"
+
+    },
+    {
+        "name": "JPMorgan Chase",
+        "address": "New York, New York",
+        "phoneNumber": "1 (800) 935-9935",
+        "website":"https://www.jpmorganchase.com/",
+        "imageurl":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAB8CAMAAAA1mC5dAAAAkFBMVEX///8AAAAEesDl5eU/Pz9XWFhcXFzU1NTw8PDz8/O4ubmvsLBRUlIAbrwAcb0AZLdmZmZERESpxuJ3eHjx9PmkpaUAdb6ZmZqAgICSuNvm7PUAaLm+1OlEiMa+v7+0zOUzMzMdHR0nJyjR4O/Hx8cMDAycvt6OrtZmmc11otGKi4sAXbU1gsNwcHAWFxeFsNhJisHGAAAEW0lEQVR4nO2ZCVPiShRGIUAWSSIBsoiAQcMsKM7//3eT9M3Sa4jzmIdOfaesErrTlz703oxGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAFeXng2N66NlflZb0Lwo7g260rdEW+Lzc7iydc3rpKV+PhfrkW5azg1+ViExW3TZae9ViiJ4dwdc+aw9cBPF2WIdK3IFDkrOB7v9ne9qOpzKGM7j2XL/KV9HiRV6l3snKVOo0cNbybacLnPtV+nytZlJ8qcZ4SSyNnhX12++exjriqMHu1kAuwVFkupWKZEn+uDd+Uv9PnjnMlzjKwtHJW8GNtdNMHj9yPyXn1V3SUu5MhfhPUIHcs5HpuA8sgZwU/DXaOvt3GLPgH5OKmoNR0k0gf3+2XUzrANrGMclZoaLtVHS2PeKY0zobLTfy2XuJMQ53y6NsC/rzJJ7lIzLYX8nRFbiY5K9zp7CZUIXvvaKeywXJc5xNnghNLO7kSbT7JzT1TPvGStHLW/aOG192LKlew2L5hBh8ul7MwzGQqBFuoSQIktzfmk9tbUo+u5WhtQFOM5riTIehgOfqOiuJQ/Yv5nBnrdf9Nbt24VXIS2xa1XEa9whB1sJzNBlatcuBzriG3ubeMcq9hUPOklMs0XaxjqNz+WLcYtSDfdPYVuuXm0SzXeocPSrk/kSvkMt65SsgrA2b5zD3MZuOjqWs0csqqJvA35fKViC2XoSmXLU2x3M0pIT+vzh2rtNukkdw5FTiJs+XflNPDlWG276zCEzZtzrrKOQd98aat9Iu42I1vKeey9zN6Q+saN4ZWhvLzryGX8U1BLRVdjlFvQj+5HO1Op83bBa/KWOXaAItPIRfdzQVOYhnaB7TTv8Pe2nwYJ46F+WJGBpxcJn5CLG4t/8+lQFznXDb7cysZOwa8907u1JRuJ/d51jlR7qTvtfLxXYC6rvPp5YzDUnPf8MdyPduvPrmTOGA+Lpea5M7Xk1vvkhr1nrLzVuXi3opcljMdtMfdWdsoNxkqNxqZDzaNXPKmHuhobjsYgl+Wo4N2Lh6jab5Qr4papp39ILn1cvlELEU2nZzmyOPSFcrRT2OedDJMzqNqSvti2mvmzahzZM7UtKNOLpYfkT5y+xgmGsKnRu5RcxA3jplomBy99OUbD9pypfzjKitOTkFeSbZWc17lSRq5RD3MVbhTffT5ILmIt5CfeKdRp9+fNNOpQc6WR+w27JFLTL8YePq7PXY6uyRX10yNueikM4Nb78ZZ84VtErXtarnQ/FuPe9LqnS/L1Q6aG5j6lrnsrsVRW/eoWVpNcmPl8N7eEslyiboIcEzuMtuXmTrVfFG9kqe9okqdlqPC8Wd++ae7Q4j82WzmlwZZ9UJikRZtmSJS8yuUTy3bThl3TC4c8DvPF6BczFW5f8StbLtdKMu9/rx1pa7G+i2U5Ha3rtI1+cHLabZcX5r1luMfcwMAAAAAAAAAAAAAAAAAAAAAAAAAAACAfn4D7aZhgfmuECAAAAAASUVORK5CYII="
+    },
+    {
+        "name": "York Water Company",
+        "address": "York, Pennsylvania",
+        "phoneNumber": "717-845-3601",
+        "website":"https://www.yorkwater.com/",
+        "imageurl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCy5R6iPjqTk4ZymQmVVVFpOUtjghVpSYBCnos1Lohw&s"
     }]
 }
