@@ -41,8 +41,11 @@ if (dayOfWeek == 1 || dayOfWeek == 2){
 
 const weatherhour = date_now.getHours() - 1;
 const weatherminutes = date_now.getMinutes();
+
 const URLweather = "https://api.open-meteo.com/v1/forecast?latitude=82.86&longitude=135.00&hourly=temperature_2m,relativehumidity_2m,windspeed_10m"
+const URLweather2 = "https://api.openweathermap.org/data/2.5/weather?lat=82.86&lon=135.00&appid=8beb09695c655edae22a342c229a8040"
 getWeather(URLweather)
+getWeather2(URLweather2)
 async function getWeather(requestURL) {
     const response = await fetch(requestURL)
     if (response.ok){
@@ -62,5 +65,21 @@ async function getWeather(requestURL) {
         }
         else
         {document.getElementById('windchill').textContent = 'N/A'}
+    }
+}
+
+async function getWeather2(requestURL) {
+    const response = await fetch(requestURL)
+    if (response.ok){
+        const jsObject = await response.json();
+        const current = jsObject['weather']
+        console.log(current)
+        const forecast = current[0].main
+        const icon = current[0].icon
+        const iconurl = "http://openweathermap.org/img/wn/" + icon + "@2x.png"
+        const weatherImg = document.getElementById('weatherimg')
+        weatherImg.setAttribute('src', iconurl)
+        weatherImg.setAttribute('alt', forecast)
+        document.getElementById('weatherforcast').textContent = forecast
     }
 }
