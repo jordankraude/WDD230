@@ -74,7 +74,7 @@ async function getWeather2(requestURL) {
         const jsObject = await response.json();
         const current = jsObject['weather']
         console.log(current)
-        const forecast = current[0].main
+        const forecast = current[0].description
         const icon = current[0].icon
         const iconurl = "http://openweathermap.org/img/wn/" + icon + "@2x.png"
         const weatherImg = document.getElementById('weatherimg')
