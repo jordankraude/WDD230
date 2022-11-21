@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Contact Information for Board Members in the Chamber of Antartica">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="..\chamber\css\index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <title>Chamber of Commerce: Antartica</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="..\chamber\images\az83o-htejh.webp" alt="site logo">
+            <h1>Chamber of Commerce: Antartica</h1>
+            <nav class="nav">
+                    <li><a href="https://jordankraude.github.io/wdd230/chamber/index.html">Home</a></li>
+                    <li><a href="https://jordankraude.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                    <li><a href="https://jordankraude.github.io/wdd230/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://jordankraude.github.io/wdd230/chamber/join.html">Join</a></li>
+                    <li><a href="https://jordankraude.github.io/wdd230/chamber/contact.html">Contact</a></li>
+            </nav>
+            <button class="btn">&#9776;</button>
+        </div>
+        <div id="socialtop">
+            <h2 id="date">Date</h2>
+            <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+            <section>
+                <a href="https://www.facebook.com/" target="_blank"><img src="..\chamber\images\facebook.png" alt="facebook icon"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="..\chamber\images\twitter.png" alt="twitter icon"></a>
+            </section>
+        </div>
+        
+    </header>
+    <main id="contactGrid">
+        <div>
+            <form action="mailto:jordankraudeTP@gmail.com" method="post" enctype="text/plain" margin-left:10px;>
+                <h1>Inquiry Form</h1>
+                <label for:contactName>Please type your name: </label>
+                <input type="text" id="contactName" name="Name" required><br><br>
+                <label for:contactTarget>Please type the name of the director you wish to contact: </label>
+                <input type="text" id="contactTaget" name="contactTarget" required><br><br>
+                <label for:contactEmail>Please enter an email in which to return a response to: </label>
+                <input type="email" id="contactEmail" name="Email" maxlength="50" required> <br><br>
+                <label for:contactNumber>Enter the phone number you would like me to message or call to get back in contact: </label>
+                <input type="tel" placeholder="Example: 111-222-3333" type="tel" name="cellphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                <label for:time>Enter the time that would work best for you for me to reach out: </label>
+                <input type="time" id="time" name="Best Time To Reach Out" placeholder="exp. 6:00 PM" required><br><br>
+                <input type="submit" id= "submit" value="submit">
+                <br>
+            </form>
+        </div>
+        <div>
+            <h1 id="BODtitle">Board of Directors</h1>
+            <section id="boardOfDirectors">
+                <div>
+                    <h2>Bob Thomas</h2>
+                    <p>Chair of the board</p>
+                    <p>111-111-1234</p>
+                    <p>bobthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Tob Thomas</h2>
+                    <p>Vice chair</p>
+                    <p>222-222-1234</p>
+                    <p>tobthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Rob Thomas</h2>
+                    <p>Secretary</p>
+                    <p>333-333-1234</p>
+                    <p>robthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Hob Thomas</h2>
+                    <p>Treasurer</p>
+                    <p>444-444-1234</p>
+                    <p>hobthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Lob Thomas</h2>
+                    <p>Board Member</p>
+                    <p>555-555-1234</p>
+                    <p>lobthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Nob Thomas</h2>
+                    <p>Director of Fundraising</p>
+                    <p>666-666-1234</p>
+                    <p>nobthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Cob Thomas</h2>
+                    <p>Director of Marketing</p>
+                    <p>777-777-1234</p>
+                    <p>cobthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Billy Bob Thomas</h2>
+                    <p>Director of Communications</p>
+                    <p>888-888-1234</p>
+                    <p>billybobthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Billy Tom Thomas</h2>
+                    <p>Director of Finance</p>
+                    <p>999-999-1234</p>
+                    <p>billytomthomas@gmail.com</p>
+                </div>
+                <div>
+                    <h2>Tommy Bob Thomas</h2>
+                    <p>Director of Bylaws</p>
+                    <p>123-123-1234</p>
+                    <p>tommybobthomas@gmail.com</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <img src="..\chamber\images\az83o-htejh.webp" alt="site logo">
+        <h4>209-495-2253   AntarticIcebergChamber.com</h4>
+        <div id="year">
+            &copy; 
+        </div>
+        <span id="javadate">Last Updated: </span>
+    </footer>
+    <script src="..\chamber\js\index.js"></script>
+</body>
+</html>

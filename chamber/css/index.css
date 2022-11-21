@@ -297,6 +297,22 @@ tr:nth-child(odd) {
 }
 #dirTable table {height: auto;}
 
+#contactGrid {display: grid;
+grid-template-columns: 2fr;
+grid-template-rows: 1fr 1.7fr;
+height: auto;}
+#boardOfDirectors {width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;}
+#boardOfDirectors div {width: 90%;
+text-align: center;
+background-color: white;
+height: auto;}
+#BODtitle {color: darkslategray;}
+#boardOfDirectors div h2, #boardOfDirectors div p {margin: 1px 1px;}
+#boardOfDirectors div h4 {margin: 5px 3px;}
+
 
 
 
@@ -442,6 +458,14 @@ margin-right: 20px;
       text-align: center;}
       #dirTable td {display: table-cell;
       width: 18%;}
+
+      #boardOfDirectors div {width: 40%;
+        text-align: center;
+        background-color: white;}
+      #contactGrid {display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;}
 }
 
 @media (min-width: 1024px) {
@@ -569,6 +593,22 @@ grid-row: 1/2;}
   grid-row: 3/4;}
 
  #photogrid img {margin: 5px 5px;} 
+
+ #contactGrid {display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  height: auto;}
+  #boardOfDirectors {width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;}
+  #boardOfDirectors div {width: 40%;
+  text-align: center;
+  background-color: white;}
+  #BODtitle {color: darkslategray;}
+  #boardOfDirectors div h2, #boardOfDirectors div p {margin: 1px 1px;}
+  #boardOfDirectors div h4 {margin: 5px 3px;}
+  
 
 }
 
