@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design is everything homepage where designers can reach the many tools
+        of the page which includes getting inspiration, leaving feedback, learning
+        about design and more.">
+    <link rel="stylesheet" href="..\css\normalize.css">
+    <link rel="stylesheet" href="..\finalProject\css\index.css">
+    <title>Design is Everything</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="..\finalProject\images\websiteLogo2.png" alt="site logo">
+        <div id="title">
+            <h1>Design is <span class="script">Everything</span></h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="..\finalProject\homePage.html">Home</a></li>
+                <li><a href="..\finalProject\forum.html">Community Forum</a></li>
+                <li><a href="..\finalProject\gallery.html">Gallery</a></li>
+                <li><a href="..\finalProject\contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="btn">&#9776;</button>
+        <nav id="hiddenNav">
+            <ul>
+                <li><a href="..\finalProject\homePage.html">Home</a></li>
+                <li><a href="..\finalProject\forum.html">Community Forum</a></li>
+                <li><a href="..\finalProject\gallery.html">Gallery</a></li>
+                <li><a href="..\finalProject\contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <source class="banner" media="(min-width:1024px)" srcset="..\finalProject\images\natureLarge.jpg">
+            <source class="banner" media="(min-width:640px)" srcset="..\finalProject\images\natureMedium.jpg">
+            <img class="banner" src="..\finalProject\images\natureSmall.jpg" alt="sunset scenery">
+        </picture>
+        <div id="mainDisplay">
+            <div id="introduction">
+                <h1>Getting Started</h1>
+                <div>
+                    <section>
+                    <h2>Welcome to Design</h2>
+                    <p>Here at design is everything, design is our lifestyle. We are a group of designers, producers, advertisers, students, and artists that all use design in our every day lives constantly. You can get and give feedback here for your own personal projects. If they are good enough and if you want you can submit your products to be seen as showcases in the home page or part of the gallery. If you like something from the gallery you can choose to buy the piece. Make sure to come back for weekly
+                        design tips and tricks to improve your designs!</p>
+                    </section>
+                    <section>
+                        <h2>Join The Club</h2>
+                        <p>Those that have accounts with "Design is Everything" get special benefits such as discounted artwork. Design tools and more! Be sure to join by clicking the button below!</p>
+                        <button onclick="location.href='finalProject/join.html'">Join The Club!</button>
+                    </section>
+                </div>
+            </div>
+            <div id="tipOfWeek">
+                <h2>Tip of the Week</h2>
+                <iframe src="https://www.youtube.com/watch?v=0QiooHI3weg" title="Design Tips for Week"></iframe>
+                <p>This week's tip is from Visme! He goes over 15 different design principles that every designer should know. Check it out on youtube here: <a href="https://www.youtube.com/watch?v=0QiooHI3weg">Click Here</a></p>
+            </div>
+            <div id="showcases">
+                <div class="show"><img src="..\finalProject\images\Remade Ad.jpg" alt="Design Showcase"></div>
+                <div class="show"><img src="..\finalProject\images\Showcase 3.jpg" alt="Design Showcase"></div>
+                <div class="show"><img src="..\finalProject\images\Showcase 4.jpg" alt="Design Showcase"></div>
+                <h2>Showcases of the Week</h2>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div id="leftFooter">
+            <div id="title">
+                <h1>Design is <span class="script">Everything</span></h1>
+            </div>
+            <h4>209-495-2253</h4>
+            <div id="year">
+                &copy; 
+            </div>
+            <div id="socialImagesSmallView">
+                <a href="https://www.facebook.com/" target="_blank"><img src="..\chamber\images\facebook.png" alt="facebook icon"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="..\chamber\images\twitter.png" alt="twitter icon"></a>
+            </div>
+        </div>
+        <img class="logo" src="..\finalProject\images\websiteLogo2.png" alt="site logo">
+        <div id="socialImages">
+            <h2>www.Design4Everything.com</h2>
+            <h4 id="javadate">Last Updated: </h4>
+        </div>
+    </footer>
+</body>
+<script src="..\finalProject\js\index.js"></script>
+</html>

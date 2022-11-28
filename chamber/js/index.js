@@ -4,7 +4,6 @@ button.addEventListener('click', show)
 
 function show() {
     navlist.classList.toggle('newstyle');
-
 }
 
 
