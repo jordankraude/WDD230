@@ -11,17 +11,20 @@ height: 15%;
 padding: 10px;
 margin-bottom: 0px;
 margin: auto auto;
-margin-left: 5px;}
+margin-left: 5px;
+z-index: 3;}
 #title {display: block;
 margin: auto auto;
 font-size: 80%;
 color: #D4E4BC;
-text-align: center;}
+text-align: center;
+z-index: 3;}
 
 #hiddenNav {height: 100%;
 display: none;
 width: 95%;
 margin: auto auto;
+z-index: 3;
 }
 #hiddenNav ul {display: flex;
     flex-direction: row;
@@ -45,7 +48,8 @@ font-size: larger;}
     height: 70px;
     margin: auto 40px;
     border: solid 1px #40376e;
-    display: none;}
+    display: none;
+    z-index: 3;}
 
 .nav ul {display: flex;
 justify-content: space-evenly;
@@ -87,7 +91,7 @@ main {height: auto;}
 
 .banner {height: 150px;
 width: 100%;
-z-index: -1;
+z-index: 2;
 position: absolute;
 top: 0;}
 
@@ -98,12 +102,12 @@ main h1, main h2, main h3, main h4 {color: #D4E4BC;}
 display: grid;
 grid-template-rows: 2fr 1fr 2.5fr;
 grid-template-columns: 1fr;
-border: none;
 margin: 0 0;
 background-color: #96acb7;
 position: relative;
-z-index: -2;
-margin-top: 40px;}
+z-index: 1;
+margin-top: 40px;
+border: none;}
 
 main div {background-color: white;
 margin: 10px 10px;
