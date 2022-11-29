@@ -14,8 +14,6 @@ async function setDisplay(requestURL) {
 setDisplay(requestURL)
 
 function displayShowcase(item, number){
-    <picture id="img1" >
-                <img src="https://dummyimage.com/400x300/ccc/fff" data-src="..\finalProject\images\Showcase 1.jpg" alt=""></picture>
     let picture = document.createElement('picture');
     let img = document.createElement('img')
     let name = document.createElement('h4');
