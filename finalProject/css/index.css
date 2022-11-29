@@ -182,18 +182,22 @@ margin-top: 50px;}
       grid-row: 8/9;}
     #img9{grid-column: 1/2;
       grid-row: 9/10;}
+
+    #photogrid {height: auto;}
   
-    #photogrid picture img {height: 100%;
-      width: 100%;
-      margin-top: 5px;
-      margin: 10px auto;
+    #photogrid div img {height: 300px;
+      width: 400px;
+      margin: auto auto;
       }
+    #photogrid div {margin: auto auto;
+    height: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;}
 
     #galleryMain {height: auto;}
     
-    #photogrid picture {margin: auto auto;} 
       
-    #photogrid picture img:hover {box-shadow: 0 0 50px #333;}
+    #photogrid div img:hover {box-shadow: 0 0 50px #333;}
 
     form {margin: auto auto;
         display: flex;
@@ -227,7 +231,68 @@ margin-top: 50px;}
     #topOfContact {margin: 80px;
     margin-bottom: 10px;
     text-align: center;}
+    
+    #joinForm {margin-top: 80px;}
+    #joinForm form {height: auto;
+    width: 100%;
+    display: block;}
+    #joinForm form input {float: none;
+    display: flex;
+    width: 96%;
+    margin: auto auto;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    height: 50px;}
+    #joinForm label {display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #40376e;
+    font-size: medium;}
+    #joinForm button {text-align: center;
+    display: block;
+    margin: 10px auto;
+    margin-top: 0px;
+    height: 40px;
+    width: 20%;}
+    #textarea {
+        width: 96%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        margin: auto auto;
+        margin-left: 10px;
+        color: #40376e;
+      }
+    #joinForm section {display: flex;
+    justify-content: space-around;
+    width: 96%;
+    margin-left: 10px;}
+    #joinForm section p {margin: 15px 10px;
+    font-size: large;}
+    #joinForm section input {height: 20px;}
 
+    #thankyouMessage {height: 90vh;
+    width: 90%;
+    text-align: center;
+    margin: auto auto;
+    margin-top: 80px;
+    margin-bottom: 10px;}
+    #thankyouMessage div {
+    background-color: #40376e;
+    width: 80%;
+    height: 50%;
+    margin: auto auto;
+    margin-top: 15vh;
+    color: #D4E4BC;}
+    #thankyouMessage div h1 {margin: auto auto;}
 
 
 
@@ -358,13 +423,22 @@ height: 40%;}
     #img9{grid-column: 2/3;
       grid-row: 4/5;}
   
-    #photogrid picture img {height: 75%;
+    #photogrid div img {height: 83%;
       width: 100%;
     
       }
-    #photogrid picture {margin: 0px 5px;}
+    #photogrid div {margin: 0px 5px;
+    margin-top: 10px;}
       
-    #photogrid picture img:hover {box-shadow: 0 0 50px #333;}
+    #photogrid div img:hover {box-shadow: 0 0 50px #333;}
+
+    #joinForm label {display: block;
+        margin-left: 10px;
+        margin-top: 20px;
+        color: #40376e;
+        font-size: x-large;}
+
+        #joinForm section input {height: 30px;}
     
 }
 

@@ -40,7 +40,39 @@
             <source class="banner" media="(min-width:640px)" srcset="..\finalProject\images\natureMedium.jpg">
             <img class="banner" src="..\finalProject\images\natureSmall.jpg" alt="sunset scenery">
         </picture>
+        <div id="joinForm">
+            <form id="FPjoin" method="get" action="joinMembership.html">
+                <label for="fname">First Name*:</label>
+                <input id="fname" type="text" name="firstname" required>
+                <label for="lname">Last Name*:</label>
+                <input id="lname" type="text" name="lastname" required>
+                <label for="job">Occupation:</label>
+                <input type="text" id="job" name="job" pattern="[a-zA-Z-\s]{7,}$">
+                <label for="email">Email*:</label>
+                <input id="email" type="email" name="email" placeholder="firstnamelastname@gmail.com" required>
+                <label for="cellphone">Phone Number*:</label>
+                <input id="cellphone" placeholder="Example: 111-222-3333 (include hyphens)" type="tel" name="cellphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label for="textarea">Description of Site Usage:</label>
+                <textarea id="textarea"></textarea>
 
+                <section>
+                    <div>
+                        <label for="Free">Free Membership:</label>
+                        <span class="radio"><input id="Free" type="radio" name="membertype" required></span>
+                        <p>Free Memberships gain access to the website blog and showcase and gallery exhibitions.</p>
+                    </div>
+    
+                    <div>
+                        <label for="Paid">Paid Membership:</label>
+                        <span class="radio"><input id="Paid" type="radio" name="membertype" required></span>
+                        <p>Paid Memberships on top of the benfits of the free plan gain access to the website design tools and recieve no fee taken out of sold artwork.</p>
+                    </div>
+                </section>
+                <label for="submitbtn"></label>
+                <input id="formDate" type="hidden" name="dateTime" value=""><br>
+                <button id="save" type="submit" value="Submit">Submit</button>
+            </form>
+        </div>
     </main>
     <footer>
         <div id="leftFooter">
@@ -64,4 +96,5 @@
     </footer>
 </body>
 <script src="..\finalProject\js\index.js"></script>
+<script src="..\finalProject\js\join.js"></script>
 </html>

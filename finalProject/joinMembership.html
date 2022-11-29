@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="..\finalProject\css\index.css">
     <title>Membership Join</title>
 </head>
-<body>
+<body onload="createMembershipCode()">
     <header>
         <img class="logo" src="..\finalProject\images\websiteLogo2.png" alt="site logo">
         <div id="title">
@@ -40,11 +40,16 @@
             <source class="banner" media="(min-width:640px)" srcset="..\finalProject\images\natureMedium.jpg">
             <img class="banner" src="..\finalProject\images\natureSmall.jpg" alt="sunset scenery">
         </picture>
-
-        <h1>Thank you for joining the design Club <span id="joinName"></span></h1>
-        <h2>Your Membership Number is:<span id="memberNumber"></span></h2>
-        <p>Don't forget to write this down. If you ever want to apply for the gallery or showcase you will need to give us that number!</p>
-
+        <div id="thankyouMessage">
+            <div>
+                <br>
+                <br>
+                <br>
+                <h1>Thank you for joining the Design Club <span id="joinName"></span>!</h1>
+                <h2>Your Membership Number is: <span id="memberNumber"></span></h2>
+                <p>Don't forget to write this down. If you ever want to apply for the gallery or showcase you will need to give us that number!</p>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="leftFooter">
@@ -67,3 +72,5 @@
         </div>
     </footer>
 </body>
+<script src="..\finalProject\joiningPage.js"></script>
+</html>

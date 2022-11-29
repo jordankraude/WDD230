@@ -13,16 +13,23 @@ async function setDisplay(requestURL) {
 setDisplay(requestURL)
 
 function displayShowcase(item){
-    let picture = document.createElement('picture');
+    let card = document.createElement('div');
     let img = document.createElement('img')
-    let name = document.createElement('h4');
+    let namePriceSection = document.createElement('section')
+    let name = document.createElement('h3');
+    let price = document.createElement('h3')
 
-    img.setAttribute('src', item.placeHolderImg)
-    img.setAttribute('data-src', item.url)
+    img.setAttribute('src', item.url)
+    img.setAttribute('data-src', item.placeHolderImg)
     name.textContent = item.name
+    price.textContent = item.price
     
-
-    picture.appendChild(img)
-    picture.appendChild(name)
-    document.getElementById('photogrid').appendChild(picture)
+    namePriceSection.appendChild(name)
+    namePriceSection.appendChild(price)
+    namePriceSection.style.display = 'flex'
+    namePriceSection.style.justifyContent = 'space-around'
+    namePriceSection.style.marginTop = '10px'
+    card.appendChild(img)
+    card.appendChild(namePriceSection)
+    document.getElementById('photogrid').appendChild(card)
 }
