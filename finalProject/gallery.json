@@ -1,0 +1,57 @@
+{
+    "galleryShowcases": [
+    {
+    "name": "John Lewis",
+    "price": "$99.99",
+    "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+    "url":"../finalProject/images/Showcase 11.jpg"
+    },
+    {
+        "name": "Mary Kate",
+        "price": "$49.99",
+        "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+        "url":"../finalProject/images/Showcase10.jpg"
+    },
+    {
+        "name": "Christian Holdem",
+        "price": "$39.99",
+        "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+        "url":"../finalProject/images/Showcase 9.webp"
+    },
+    {
+        "name": "Larry Kay",
+        "price": "$99.99",
+        "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+        "url":"../finalProject/images/Showcase 8.webp"
+    },
+    {
+        "name": "Travis Sternum",
+        "price": "$49.99",
+        "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+        "url":"../finalProject/images/Showcase 7.jpg"
+    },
+    {
+        "name": "Sarah Lattener",
+        "price": "$99.99",
+        "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+        "url":"../finalProject/images/Showcase 6.jpg"
+    },
+    {
+        "name": "Mark Dixon",
+        "price": "$29.99",
+        "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+        "url":"../finalProject/images/Showcase 5.jpg"
+    },
+    {
+        "name": "Jake Ryan",
+        "price": "149.99",
+        "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+        "url":"../finalProject/images/Showcase 2.jpg"
+    },
+    {
+        "name": "Rebbeca Nothum",
+        "price": "$49.99",
+        "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
+        "url":"../finalProject/images/Showcase 1.jpg"
+    }]
+}

@@ -18,6 +18,7 @@
         <nav class="nav">
             <ul>
                 <li><a href="..\finalProject\homePage.html">Home</a></li>
+                <li><a href="..\finalProject\fpjoin.html">Join</a></li>
                 <li><a href="..\finalProject\forum.html">Community Forum</a></li>
                 <li><a href="..\finalProject\gallery.html">Gallery</a></li>
                 <li><a href="..\finalProject\contact.html">Contact</a></li>
@@ -27,6 +28,7 @@
         <nav id="hiddenNav">
             <ul>
                 <li><a href="..\finalProject\homePage.html">Home</a></li>
+                <li><a href="..\finalProject\fpjoin.html">Join</a></li>
                 <li><a href="..\finalProject\forum.html">Community Forum</a></li>
                 <li><a href="..\finalProject\gallery.html">Gallery</a></li>
                 <li><a href="..\finalProject\contact.html">Contact</a></li>
@@ -39,6 +41,30 @@
             <source class="banner" media="(min-width:640px)" srcset="..\finalProject\images\natureMedium.jpg">
             <img class="banner" src="..\finalProject\images\natureSmall.jpg" alt="sunset scenery">
         </picture>
+        <h1 id="topOfContact">Gallery/Showcase Form Request</h1>
+        <form action="mailto:jordankraudeTP@gmail.com" method="post" enctype="text/plain" margin-left:10px;>
+            <div id="formLeft">
+                <label for:contactName>Please type your name: </label>
+                <input type="text" id="contactName" name="Name" required><br><br>
+                <label for:contactTarget>Please enter your membership number: </label>
+                <input type="text" id="membershipNumber" name="membershipNumber" required><br><br>
+                <label for:contactEmail>Please enter an email in which to return a response to: </label>
+                <input type="email" id="contactEmail" name="Email" maxlength="50" required> <br><br>
+                <label for:price>Please enter the price you would like your piece of art to sell for if posted:</label>
+                <input placeholder="Example: 99.99" pattern="\d?\d\.\d\d" id="price" name="price" required><br><br>
+                <label for:contactNumber>Enter the phone number you would like us to contact you: </label>
+                <input type="tel" placeholder="Example: 111-222-3333" type="tel" name="cellphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                <label for:time>Enter the time that would work best for someone to reach out to you: </label>
+                <input type="time" id="time" name="Best Time To Reach Out" placeholder="exp. 6:00 PM" required><br><br>
+            </div>
+            <div id="formRight">
+                <input type = "file" id="fileUploader" name = "upload" accept = "image/*" />
+                <label id="progress-label" for="progress"></label>
+                <progress id="progress" value="0" max="100"> </progress>
+            </div>
+            <input type="submit" id= "submit" value="submit">
+            <br>
+        </form>
     </main>
     <footer>
         <div id="leftFooter">
@@ -61,5 +87,6 @@
         </div>
     </footer>
 </body>
+<script src="..\finalProject\js\fileUploader.js"></script>
 <script src="..\finalProject\js\index.js"></script>
 </html>
