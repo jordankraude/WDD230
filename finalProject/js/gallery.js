@@ -6,7 +6,7 @@ async function setDisplay(requestURL) {
         const jsObject = await response.json();
         const showcases = jsObject['galleryShowcases']
         for (showcase in showcases){
-            displayShowcase(Showcases[showcase])
+            displayShowcase(showcases[showcase])
         }
     }
 }
