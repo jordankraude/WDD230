@@ -3,6 +3,7 @@ var requestURL = "https://raw.githubusercontent.com/jordankraude/wdd230/main/fin
 async function setDisplay(requestURL) {
     const response = await fetch(requestURL)
     if (response.ok){
+        const i = 0
         const jsObject = await response.json();
         const showcases = jsObject['galleryShowcases']
         for (showcase in showcases){
