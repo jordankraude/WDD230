@@ -44,7 +44,7 @@
     },
     {
         "name": "Jake Ryan",
-        "price": "149.99",
+        "price": "$149.99",
         "placeHolderImg":"https://dummyimage.com/400x300/ccc/fff",
         "url":"../finalProject/images/Showcase 2.jpg"
     },

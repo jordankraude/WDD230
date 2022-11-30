@@ -6,23 +6,33 @@ const alertBox = document.querySelector(".alert"); // select alert display div
 let form = document.querySelector(`#${formId}`); // select form
 let formElements = form.elements; // get the elements in the form
 
-const getFormData = () => {
-    let data = { [formIdentifier]: {} }; // create an empty object with the formIdentifier as the key and an empty object as its value
-    for (const element of formElements) {
-      if (element.name.length > 0) {
-        data[formIdentifier][element.name] = element.value;
+$('#save').on("click", function(){
+  let valid = true;
+  $('[required]').each(function() {
+    if ($(this).is(':invalid') || !$(this).val()) valid = false;
+  })
+  if (!valid) alert("error please fill all fields!");
+  else {
+    const getFormData = () => {
+      let data = { [formIdentifier]: {} }; // create an empty object with the formIdentifier as the key and an empty object as its value
+      for (const element of formElements) {
+        if (element.name.length > 0) {
+          data[formIdentifier][element.name] = element.value;
+        }
       }
+      return data;
+    };
+    saveButton.onclick = event => {
+      event.preventDefault();
+      data = getFormData();
+      localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
+      const message = "Form draft has been saved!";
+      document.location.href = "../finalProject/joinMembership.html"
     }
-    return data;
-  };
-  saveButton.onclick = event => {
-    event.preventDefault();
-    data = getFormData();
-    localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
-    const message = "Form draft has been saved!";
-    document.location.href = "../finalProject/joinMembership.html";
-
+  
   }
+})
+
 
 
 function createMembershipCode(){
