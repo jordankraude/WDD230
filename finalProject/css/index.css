@@ -15,7 +15,7 @@ margin-bottom: 0px;
 margin: auto auto;
 margin-left: 5px;
 z-index: 3;}
-#title {display: block;
+.title {display: block;
 margin: auto auto;
 font-size: 80%;
 color: #D4E4BC;
@@ -73,7 +73,7 @@ z-index: 3;}
 footer {display: flex;
 background-color: #D4E4BC;}
 
-footer #title {color: #40376e;
+footer .title {color: #40376e;
 font-size: 80%;}
 
 footer .logo {width: 25%;
@@ -353,7 +353,7 @@ margin-top: 50px;}
 
 
 @media (min-width: 640px){
-    #title {font-size: 120%;
+    .title {font-size: 120%;
     z-index: 3;}
     .logo {width: 13%;
         height: 13%;
@@ -367,7 +367,7 @@ margin-top: 50px;}
         justify-content: space-evenly;
         background-color: #D4E4BC;}
     
-    footer #title {color: #40376e;
+    footer .title {color: #40376e;
     font-size: 80%;}
     
     footer .logo {width: 20%;
@@ -567,7 +567,7 @@ border: solid 3px #36558F;}
 height: 8%;
 padding: 10px;
 margin: auto auto;}
-#title {display: block;
+.title {display: block;
 margin-left: 40px;
 font-size: 100%;
 color: #D4E4BC;
