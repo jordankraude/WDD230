@@ -343,6 +343,11 @@ margin-top: 50px;}
         margin: 0 0;}
 
 
+    header h1, header h2, header h3,  header h4, footer h1, footer h2, footer h3, #tipOfWeek h2, #forumRight h1 {font-family: 'Petit Formal Script', cursive;}
+
+    h1, h2, h3, h4, nav {font-family: 'Open Sans', sans-serif;}
+    p {font-family: 'Antique Slab', serif;}
+
 
 
 
