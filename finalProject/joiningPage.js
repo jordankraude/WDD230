@@ -1,4 +1,4 @@
-let jsonData = localStorage.getItem("https://jordankraude.github.io/wdd230/finalProject/fpjoin.html")
+let jsonData = localStorage.getItem("https://jordankraude.github.io/wdd230/finalProject/fpjoin.html FPjoin")
 
 data = JSON.parse(jsonData)
 document.getElementById("joinName").textContent = data.firstname
