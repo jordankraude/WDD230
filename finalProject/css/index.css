@@ -294,7 +294,55 @@ margin-top: 50px;}
     color: #D4E4BC;}
     #thankyouMessage div h1 {margin: auto auto;}
 
-    
+    #forumMain {width: 98%;
+    height: auto;
+    display: block;
+    background-color: #96acb7;
+    margin-top: 80px;}
+    #forumLeft {width: 98%;
+    height: 1100px;
+    margin: auto auto;}
+    #forumRight {width: 98%;
+    height: 1200px;
+    margin-top: 100px;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;}
+    #forumMain h1 {text-align: center;
+                    color:#36558F;}
+
+    #forumLeft h2 {color: #36558F;
+    text-align: center;}
+    blockquote {display: hidden;}
+    #tweet {display: hidden}
+    #personalBlogEntry textarea {
+        width: 98%;
+        height: 400px;
+        margin: 10px 10px;
+        resize: none;
+    }
+    #forumRight h4, #forumRight h2 {text-align: center;}
+    #forumRight p {color: white;}
+    #forumRight section {background-color: #40376e;
+    border: solid 3px #36558F ;
+    margin: 10px 10px;
+    padding: 10px;}
+    main #forumMain {border: none;}
+
+    #titleBlog, #nameOfBlogger{height: 30px;
+    width: 60%;
+    margin: auto auto;}
+    #forumLeft label {margin-left: 40px;}
+    #forumLeft #jobsearch {height: 400px; 
+        width: 90%;
+        margin: auto auto;
+        margin-top: 80px;}
+    #forumMain iframe {height: 100%;
+        width: 100%;
+        margin: 0 0;}
+
+
 
 
 
@@ -441,8 +489,57 @@ height: 40%;}
         font-size: x-large;}
 
         #joinForm section input {height: 30px;}
+
+    #forumMain {width: 98%;
+        height: auto;
+        display: flex;
+        background-color: #96acb7;
+        margin-top: 80px;}
+        #forumLeft {width: 48%;
+        height: 1200px;}
+        #forumRight {width: 48%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;}
+        #forumMain h1 {text-align: center;
+                        color:#36558F;}
+        #forumMain iframe {height: 100%;
+                           width: 100%;
+                           margin: 0 0;}
     
+        #forumLeft h2 {color: #36558F;
+        text-align: center;}
+        blockquote {border: none;
+        margin: auto auto;
+        border-width: 0px;
+        margin-left: 20px;}
+        #personalBlogEntry textarea {
+            width: 95%;
+            height: 400px;
+            margin: 10px 10px;
+            resize: none;
+        }
+        #forumRight h4, #forumRight h2 {text-align: center;}
+        #forumRight p {color: white;}
+        #forumRight section {background-color: #40376e;
+        border: solid 3px #36558F ;
+        margin: 10px 10px;
+        padding: 10px;}
+        main #forumMain {border: none;}
+    
+        #titleBlog, #nameOfBlogger{height: 30px;
+        width: 60%;
+        margin: auto auto;}
+        #forumLeft label {margin-left: 40px;}
+        #forumLeft #jobsearch {height: 400px; 
+        width: 90%;
+        margin: auto auto;
+        margin-top: 80px;}
 }
+
+    
+
 
 
 
@@ -600,5 +697,104 @@ footer .logo {width: 15%;
     #topOfContact {margin: 80px;
     margin-bottom: 10px;
     text-align: center;}
+
+    #forumMain {width: 98%;
+        height: auto;
+        display: flex;
+        background-color: #96acb7;
+        margin-top: 80px;}
+        #forumLeft {width: 48%;
+        height: 1200px;}
+        #forumRight {width: 48%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;}
+        #forumMain h1 {text-align: center;
+                        color:#36558F;}
+        #forumMain iframe {height: 100%;
+                           width: 100%;
+                           margin: 0 0;}
+    
+        #forumLeft h2 {color: #36558F;
+        text-align: center;}
+        blockquote {border: none;
+        margin: auto auto;
+        border-width: 0px;
+        margin-left: 20px;}
+        #personalBlogEntry textarea {
+            width: 95%;
+            height: 400px;
+            margin: 10px 10px;
+            resize: none;
+        }
+        #forumRight h4, #forumRight h2 {text-align: center;}
+        #forumRight p {color: white;}
+        #forumRight section {background-color: #40376e;
+        border: solid 3px #36558F ;
+        margin: 10px 10px;
+        padding: 10px;}
+        main #forumMain {border: none;}
+    
+        #titleBlog, #nameOfBlogger{height: 30px;
+        width: 60%;
+        margin: auto auto;}
+        #forumLeft label {margin-left: 40px;}
+        #forumLeft #jobsearch {height: 400px; 
+        width: 90%;
+        margin: auto auto;
+        margin-top: 80px;}
 }
 
+@media (max-width:708px){
+    #forumMain {width: 98%;
+        height: auto;
+        display: block;
+        background-color: #96acb7;
+        margin-top: 80px;}
+        #forumLeft {width: 96%;
+        height: 1200px;}
+        #forumRight {width: 96%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 30px;}
+        #forumMain h1 {text-align: center;
+                        color:#36558F;}
+    
+        #forumLeft h2 {color: #36558F;
+        text-align: center;}
+        blockquote {display: hidden;}
+        #tweet {display: hidden}
+        #personalBlogEntry textarea {
+            width: 95%;
+            height: 400px;
+            margin: 10px 10px;
+            resize: none;
+        }
+        #forumRight h4, #forumRight h2 {text-align: center;}
+        #forumRight p {color: white;}
+        #forumRight section {background-color: #40376e;
+        border: solid 3px #36558F ;
+        margin: 10px 10px;
+        padding: 10px;}
+        main #forumMain {border: none;}
+    
+        #titleBlog, #nameOfBlogger{height: 30px;
+        width: 60%;
+        margin: auto auto;}
+        #forumLeft label {margin-left: 40px;}
+        #forumLeft #jobsearch {height: 400px; 
+            width: 90%;
+            margin: auto auto;
+            margin-top: 80px;}
+        #forumMain iframe {height: 100%;
+            width: 100%;
+            margin: 0 0}
+
+        #forumMain {margin-top: 100px;}
+        
+    
+    
+}

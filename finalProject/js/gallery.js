@@ -21,6 +21,7 @@ function displayShowcase(item){
 
     img.setAttribute('src', item.url)
     img.setAttribute('data-src', item.placeHolderImg)
+    img.setAttribute('alt', item.alt)
     name.textContent = item.name
     price.textContent = item.price
     
